@@ -1,7 +1,9 @@
 /* A Placeholder */
+
 body {
     /* Make the margin for the entire page zero*/
     box-sizing: border-box; 
+    background-color:black;
     margin: 0px;
     border: 0px;
 }
@@ -27,10 +29,9 @@ div.navigation a {
 }
 
 #home {
-    color:orange;
+    color:gold;
 }
 
 div.navigation a:hover {
     text-decoration:underline;
 }
-
