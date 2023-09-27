@@ -7,7 +7,7 @@ body {
 }
 
 div.navigation {
-    background-color:rgb(7, 38, 51);
+    background-color:rgb(7, 66, 91);
     box-sizing:border-box;
     padding:15px;
     height:fit-content; 
@@ -29,19 +29,8 @@ div.navigation a {
 #home {
     color:orange;
 }
-/*
-div.navigation #about {
-}
-div.navigation #works {
-}
-div.navigation #contact {
-}
-*/
 
 div.navigation a:hover {
-    color:aqua;
+    text-decoration:underline;
 }
 
-#home:hover {
-    color:aqua;
-}
