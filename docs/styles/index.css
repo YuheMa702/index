@@ -1,0 +1,26 @@
+
+
+div.content {
+    box-sizing:border-box;
+    padding:0px 15px;
+    width:100%;
+}
+
+#welcome {
+    color:teal;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:36px;
+    text-align:center;
+}
+
+.code-playground-container {
+    display:flex; /* Display children side by side */
+}
+
+.vertical-text-area {
+    box-sizing:border-box;
+    padding:15px;
+    width:50%;
+    height:400px;
+    resize:none;
+}
