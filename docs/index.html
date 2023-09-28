@@ -30,20 +30,26 @@
       </div>
     </header>
     <div class="content">
-      <h1 id="welcome">Welcome to Yuhe's Code Playground!</h1>
-      <button id="execute-button" onclick="executePythonCode()">Execute</button><br>
+      <h1 id="welcome">Welcome to My Code Playground!</h1>
       <div class="code-playground-container">
         <div class="editor-box">
-          <textarea id="editor-input"></textarea>
+          <textarea id="editor-input">#Please write python code here</textarea>
         </div>
         <div class="console-box">
-          <iframe id="console-output"></iframe>
+          <div id="console-output">-->console</div>
         </div>
+      </div>
+      <div class="buttons-container">
+        <button id="run-button"">Execute</button>
       </div>
     </div>
     <!--Include JavaScript files-->
     <script src="./codemirror/lib/codemirror.js"></script>
     <script id="language" src="./codemirror/mode/python/python.js"></script> <!--Py syntax highlighting-->
     <script src="./scripts/index.js"></script>
+    <!--Load sculpt for compiling python-->
+    <script src="jquery.min.js" type="text/javascript"></script> 
+    <script src="./sculpt/skulpt.js"></script>
+    <script src="./sculpt/skulpt-stdlib.js"></script>
   </body>  
 </html>
