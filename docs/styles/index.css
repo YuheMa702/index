@@ -1,0 +1,64 @@
+
+
+div.content {
+    box-sizing:border-box;
+    padding:0px 15px;
+    width:100%;
+}
+
+#welcome {
+    color:rgb(53, 209, 66);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:36px;
+    text-align:center;
+}
+
+.code-playground-container {
+    margin:0px;
+    padding:0px;
+    display:flex; /* Display children side by side */
+}
+
+.editor-box, .console-box {
+    flex:1;
+    padding:15px;
+}
+
+#editor-input {
+    width:100%;
+    height:100%;
+    border:3px solid gold;
+}
+
+#console-output {
+    box-sizing:border-box;
+    padding:10px 15px;
+    width:100%;
+    height:300px;
+    border:3px solid grey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    color:bisque;
+    white-space:pre-line;
+    line-height:10px;
+    overflow-y:scroll;
+}
+
+.buttons-container {
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px 15px;
+}
+
+#run-button {
+    float:left;
+    box-sizing:border-box;
+    padding:15px;
+    background-color:rgb(7, 66, 91);
+    border-width:0px;
+    border-radius:15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px;
+    font-weight:700;
+    color:gold;
+}
