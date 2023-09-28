@@ -14,13 +14,27 @@ div.content {
 }
 
 .code-playground-container {
+    margin:0px;
+    padding:0px;
     display:flex; /* Display children side by side */
 }
 
-.vertical-text-area {
-    box-sizing:border-box;
+.editor-box, .console-box {
+    flex:1;
     padding:15px;
-    width:50%;
-    height:400px;
-    resize:none;
+}
+
+#editor-input {
+    width:100%;
+    height:100%;
+    border:3px solid gold;
+}
+
+#console-output {
+    box-sizing:border-box;
+    width:100%;
+    height:300px;
+    border:3px solid grey;
+    overflow-x:auto;
+    overflow-y:auto;
 }
