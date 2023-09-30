@@ -29,20 +29,25 @@
         </nav>
       </div>
     </header>
-    <div class="content">
-      <h1 id="welcome">Welcome to My Code Playground!</h1>
-      <div class="code-playground-container">
-        <div class="editor-box">
-          <textarea id="editor-input">#Please write python code here</textarea>
+    <main>
+      <div class="content">
+        <h1 id="welcome">Welcome to My Code Playground!</h1>
+        <div class="code-playground-container">
+          <div class="editor-box">
+            <textarea id="editor-input">#Please write python code here</textarea>
+          </div>
+          <div class="console-box">
+            <div id="console-output">-->console</div>
+          </div>
         </div>
-        <div class="console-box">
-          <div id="console-output">-->console</div>
+        <div class="buttons-container">
+          <button id="run-button"">Execute</button>
         </div>
       </div>
-      <div class="buttons-container">
-        <button id="run-button"">Execute</button>
-      </div>
-    </div>
+    </main>
+    <footer>
+      <p id="copyright">Yuhe Ma &copy; 2023</p>
+    </footer>
     <!--Include JavaScript files-->
     <script src="./codemirror/lib/codemirror.js"></script>
     <script id="language" src="./codemirror/mode/python/python.js"></script> <!--Py syntax highlighting-->
