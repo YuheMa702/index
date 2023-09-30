@@ -8,17 +8,17 @@ body {
     border: 0px;
 }
 
-div.navigation {
+div.navigation, .dropdown-content {
+    /*border:5px solid green;*/
     background-color:rgb(7, 66, 91);
     box-sizing:border-box;
-    padding:15px;
+    padding:15px;  /*Used to be 15px;*/
     height:fit-content; 
 }
 
 div.navigation a {
     box-sizing:border-box;
-    margin-left:15px;
-    margin-right:15px;
+    margin:0;
     text-decoration:none;
     color:rgb(250, 239, 182);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,6 +34,49 @@ div.navigation a {
 
 div.navigation a:hover {
     text-decoration:underline;
+}
+
+nav ul {
+    list-style:none;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    display:block;
+    /*border: 3px solid rgb(225, 18, 18);*/
+}
+
+nav li {
+    display:inline;
+    box-sizing:border-box;
+    margin:0;
+    padding:15px 15px 10px 15px;
+    /*border:1px dashed yellow;*/
+    border-bottom:13px solid transparent;
+}
+
+.dropdown-content {
+    display: none;
+    margin-top:15px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content{
+    border-top:1px solid white;
+    display:flex;
+}
+
+#dropdown-works:hover, #dropdown-guides:hover, #dropdown-contact:hover{
+    border-bottom:20px solid white;
 }
 
 #copyright {
