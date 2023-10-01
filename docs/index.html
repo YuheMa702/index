@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <!--Include CodeMirror CSS files-->
     <link rel="stylesheet" type="text/css" href="./codemirror/lib/codemirror.css">
-    <link rel="stylesheet" type="text/css" href="./styles/monokai.css"> <!--Load theme-->
+    <link rel="stylesheet" type="text/css" href="./styles/oceanic-next.css"> <!--Load theme-->
     <!--Include js file for index.html-->
     <!--Include additional css files for styling-->
     <link rel="stylesheet" type="text/css" href="./styles/common.css">
@@ -22,26 +22,52 @@
     <header>
       <div class="navigation">
         <nav>
-          <a id="home" color="orance" href="./index.html">Yuhe Ma</a></li>
-          <a id="about" href="./about.html">About</a>
-          <a id="works" href="./works.html">Works</a>
-          <a id="contact" href="./contact.html">Contact</a>
+          <ul class="main-menu">
+            <li id="dropdown-home"><a id="home" color="orange" href="./index.html">Home</a></li>
+            <li id="dropdown-about"><a id="about" href="./about.html">About</a></li>
+            <li class="dropdown" id="dropdown-works">
+              <a id="works" href="./works.html">Works</a>
+              <div class="dropdown-content">
+                <a href="#">Work1</a>
+                <a href="#">Work2</a>
+                <a href="#">Work3</a>
+              </div>
+            </li>
+            <li class="dropdown" id="dropdown-guides">
+              <a id="guides" href="./guides.html">Guides</a>
+              <div class="dropdown-content">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+              </div>
+            </li>
+            <li class="dropdown" id="dropdown-contact">
+              <a id="contact" href="./contact.html">Contact</a>
+              <div class="dropdown-content">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+              </div>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
       <div class="content">
-        <h1 id="welcome">Welcome to My Code Playground!</h1>
+        <h1 id="welcome">Welcome to My Python Code Playground!</h1>
         <div class="code-playground-container">
           <div class="editor-box">
             <textarea id="editor-input">#Please write python code here</textarea>
           </div>
-          <div class="console-box">
-            <div id="console-output">-->console</div>
+          <div class="canvas-box">
+            <div id="canvas">Canvas</div>
           </div>
         </div>
-        <div class="buttons-container">
-          <button id="run-button"">Execute</button>
+        <div class="console-box">
+          <div class="buttons-container">
+            <button id="run-button">Execute</button>
+          </div>
+          <div id="console-output">console</div>
         </div>
       </div>
     </main>
