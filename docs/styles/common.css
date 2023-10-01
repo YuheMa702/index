@@ -84,11 +84,6 @@ nav li {
     border-bottom: 6px solid white;
 }
 
-footer {
-    position:relative;
-    float:inline-end;
-}
-
 #copyright {
     text-align:center;
     color:gold;
