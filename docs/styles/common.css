@@ -3,14 +3,15 @@
 body {
     /* Make the margin for the entire page zero*/
     box-sizing: border-box; 
-    background-color:black;
+    background: no-repeat linear-gradient(to bottom, black, rgb(7, 56, 81));
     margin: 0px;
     border: 0px;
 }
 
 div.navigation, .dropdown-content {
     /*border:5px solid green;*/
-    background-color:rgb(7, 66, 91);
+    /*background-color:rgb(7, 56, 81);*/
+    background-color:transparent;
     box-sizing:border-box;
     padding:15px;  /*Used to be 15px;*/
     height:fit-content; 
@@ -32,9 +33,6 @@ div.navigation a {
     color:gold;
 }
 
-div.navigation a:hover {
-    text-decoration:underline;
-}
 
 nav ul {
     list-style:none;
@@ -61,22 +59,34 @@ nav li {
     position:absolute;
     left:0;
     right:0;
+    z-index:1;
 }
 
 .dropdown-content a {
-    padding: 10px 15px;
+    padding: 0px 15px;
     text-decoration: none;
     display: block;
 }
 
 
 .dropdown:hover .dropdown-content{
-    border-top:1px solid white;
+    /*background-color:rgb(12, 100, 115);*/
+    background-color: rgba(7, 56, 81);
+    /*border-top:1px solid white;*/
     display:flex;
 }
 
 #dropdown-works:hover, #dropdown-guides:hover, #dropdown-contact:hover{
     border-bottom:20px solid white;
+}
+
+#dropdown-home:hover, #dropdown-about:hover {
+    border-bottom: 6px solid white;
+}
+
+footer {
+    position:relative;
+    float:inline-end;
 }
 
 #copyright {

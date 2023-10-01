@@ -7,9 +7,9 @@ div.content {
 }
 
 #welcome {
-    color:rgb(53, 209, 66);
+    color:rgb(7, 163, 20);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:36px;
+    font-size:24px;
     text-align:center;
 }
 
@@ -19,22 +19,53 @@ div.content {
     display:flex; /* Display children side by side */
 }
 
-.editor-box, .console-box {
+.editor-box {
     flex:1;
-    padding:15px;
+    padding:0px 15px;
+}
+
+.canvas-box {
+    flex:1;
+    padding:0px 15px;
 }
 
 #editor-input {
     width:100%;
-    height:100%;
-    border:3px solid gold;
+    resize:both;
 }
 
-#console-output {
+#canvas {
     box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    color:bisque;
     padding:10px 15px;
     width:100%;
-    height:300px;
+    height:100%;
+    border:3px solid gold;
+    resize:none;
+}
+
+.console-box {
+    display:flex
+}
+
+
+.buttons-container {
+    flex:1;
+    box-sizing:border-box;
+    margin:15px;
+    padding:10px 15px;
+}
+
+
+#console-output {
+    flex:1;
+    box-sizing:border-box;
+    margin:15px;
+    width:50%;
+    padding:10px 12px;
+    height:100px;
     border:3px solid grey;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:14px;
@@ -44,16 +75,10 @@ div.content {
     overflow-y:scroll;
 }
 
-.buttons-container {
-    box-sizing:border-box;
-    margin:0px;
-    padding:0px 15px;
-}
-
 #run-button {
     box-sizing:border-box;
     padding:15px;
-    background-color:rgb(7, 66, 91);
+    background-color:rgb(0, 0, 0);
     border-width:0px;
     border-radius:15px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
